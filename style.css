@@ -1,0 +1,10 @@
+body {background-color: yellow;}
+
+#titular{color:rgba(12, 171, 147, 0.995);font-size: 100px;}
+
+.elemento{color:rgb(249, 8, 8);}
+.margenes{margin:50px 20px 9px 70px;}
+
+*{border:1px solid red;}
+
+
