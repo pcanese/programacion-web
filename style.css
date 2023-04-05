@@ -5,6 +5,9 @@ body {background-color: rgb(255, 255, 0);}
 .elemento{color:rgb(249, 8, 8);}
 .margenes{margin:50px 20px 9px 70px;}
 
-*{border:1px solid red;}
+*{border:1px solid red;font-family: 'Delicious Handrawn', cursive;}
 
+.letragrande {font-size: 70px; color: black;}
 
+.div {background-color: green; color: azure;}
+#segundafoto {width: 80vh;}
