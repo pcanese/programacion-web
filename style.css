@@ -7,7 +7,7 @@ body {background-color: rgb(255, 255, 0);}
 
 *{border:1px solid red;font-family: 'Delicious Handrawn', cursive;}
 
-.letragrande {font-size: 70px; color: black;}
+.letragrande {font-size: 70px; color: blue;}
 
 .div {background-color: green; color: azure;}
 #segundafoto {width: 80vh;}
