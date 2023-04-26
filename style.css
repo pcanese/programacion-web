@@ -9,5 +9,39 @@ body {background-color: rgb(255, 255, 0);}
 
 .letragrande {font-size: 70px; color: blue;}
 
-.div {background-color: green; color: azure;}
+.div { background-color: green; color: azure;}
 #segundafoto {width: 80vh;}
+
+.flex-container{
+    display:flex; 
+    background-color: blueviolet;
+    flex-direction: row;
+    justify-content:space-around;
+
+}
+
+div{
+    font-size: 50px;
+    margin: 10px;
+    padding: 20px;
+}
+
+@media screen and (max-width: 992px) {
+    body {background-color: aqua;
+    color: pink;
+}
+    
+}
+
+@media screen and (max-width: 600px) {
+    body {
+      background-color: olive;
+      color: white;
+
+    }
+    img {display: None}
+
+    div h2 {
+        background-color: rgb(179, 161, 148)
+    }
+}
