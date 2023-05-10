@@ -1,47 +1,209 @@
-body {background-color: rgb(255, 255, 0);}
 
-#titular{color:rgba(12, 171, 147, 0.995);font-size: 100px;}
+.chiquitito{
+    display: none;
+}
+#titular{color:rgba(248, 250, 249, 0.995);font-size: 6vw;}
 
 .elemento{color:rgb(249, 8, 8);}
-.margenes{margin:50px 20px 9px 70px;}
+.margenes{margin:0;}
 
-*{border:1px solid red;font-family: 'Delicious Handrawn', cursive;}
-
-.letragrande {font-size: 70px; color: blue;}
-
-.div { background-color: green; color: azure;}
-#segundafoto {width: 80vh;}
-
-.flex-container{
-    display:flex; 
-    background-color: blueviolet;
-    flex-direction: row;
-    justify-content:space-around;
-
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Poppins';
 }
 
-div{
-    font-size: 50px;
-    margin: 10px;
-    padding: 20px;
-}
 
-@media screen and (max-width: 992px) {
-    body {background-color: aqua;
-    color: pink;
-}
+
+.hero{
+    width: 100%;
+    height: 100vh;
+    background-image: linear-gradient(rgba(12,3,51,0,3)), rgba(12,3,51,0,3);
+    position: relative;
+    padding: 0 5%;
+    display: flex;
+    align-items: center;
+    justify-content:space-between;
     
 }
+.back-video{
+    width: 100%;
+    background-size: cover;
+}
 
-@media screen and (max-width: 600px) {
-    body {
-      background-color: olive;
-      color: white;
+nav{
+    width: 100%;
+    position: absolute;
+    top: 0;
+    left: 0;
+    padding: 20px 8%;
+    display: flex;
+    align-items:center;
+    justify-content: space-between;
+    
+}
+nav .logo{
+    width: 8vw ;
+}
 
-    }
-    img {display: None}
 
-    div h2 {
-        background-color: rgb(179, 161, 148)
+nav ul li{
+    list-style: none;
+    display: inline-block;
+    margin-left: 1vw;
+
+}
+nav ul li a {
+    text-decoration: none;
+    color: #f5f0f0;
+    font-size: 1vw;
+}
+nav ul li a:hover{
+    text-decoration:solid;
+    font-size: 2vw;
+}
+
+
+
+nav.sticky{
+    position: fixed;
+    top: 0;
+    left: 0;
+    padding: 2px 3%;
+    background-color: black;
+    transition: padding 1s;
+}
+
+
+.content {
+    width: 100%;
+    text-align:center;
+}
+.content h1 {
+    font-size: 15vw;
+    color: rgb(251, 248, 248);
+    font-weight:600;
+    transition: 0.5s;
+
+}
+.content h1:hover{
+    -webkit-text-stroke: 2px #fff;
+    color: transparent;
+}
+
+.content a {
+    text-decoration: none;
+    display: inline-block;
+    color: rgb(246, 236, 236);
+    font-size: 2vw;
+    border: 2px solid rgb(251, 249, 249);
+    padding: 1vw 4vh;
+    border-radius: 50px;
+    margin-top: 20px;
+}
+.content a:hover{
+    font-size: 3vw;
+    margin-top: 1px;
+}
+.back-video {
+    position:absolute;
+    right: 0;
+    bottom: 0;
+    z-index: -1;
+}
+
+@media (min-aspect-ratio: 16/9) {
+    .back-video{
+        width: 100%;
+        height: auto;
     }
 }
+
+@media (max-aspect-ratio: 16/9) {
+    .back-video{
+        width: auto;
+        height: 100%;
+    }
+}
+
+.container{
+    width: 100%;
+    height: 100vh;
+}
+.slides {
+    width: 100%;
+    height: 100vh;
+}
+
+
+.conocenos{
+    background-color: rgb(225, 204, 177);
+}
+.conjunto{
+    display: inline-flex;
+    justify-content: space-around;
+}
+.conocenos h2{
+    background-color:rgb(145, 122, 64);
+    background-size: 100%;
+    text-align: center;
+    width: 100%;
+    font-weight:0;
+    font-size: 7vw;
+    padding: 1vh ;
+    margin-bottom: 5vw;
+}
+
+.conocenos p{
+    background-color:bisque;
+    border-style: groove;
+    border-color:burlywood;
+    border-radius: 5vw;
+    border-width: 1vw;
+    text-align:left;
+    padding: 8vh;
+    display: flex;
+    width: 40%;
+    justify-content:space-around;
+}
+
+.conocenos p:hover{
+    border-style:ridge;
+    border-color:burlywood;
+    border-radius: 5vw;
+    border-width: 1vw;
+    animation:alternate;
+    width: 50%;
+}
+.foto-jovenes{
+    width: 40%;
+    background-color:bisque;
+    border-style:double;
+    border-color:burlywood;
+    border-radius: 5vw;
+    border-width: 1vw;
+}
+
+.foto-jovenes:hover{
+    width: 50%;
+}
+
+
+
+
+div{
+    font-size: 2vw;
+
+}
+.container{
+    margin: 0;
+    padding: 0;
+    width: 100vw!important;
+}
+
+
+
+
+
+
