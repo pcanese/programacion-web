@@ -1,4 +1,8 @@
 
+*{
+    margin: 0;
+    padding: 0;
+}
 .chiquitito{
     display: none;
 }
@@ -32,6 +36,9 @@
     background-size: cover;
 }
 
+
+
+
 nav{
     width: 100%;
     position: absolute;
@@ -50,7 +57,7 @@ nav .logo{
 
 nav ul li{
     list-style: none;
-    display: inline-block;
+    /* display: inline-block; */
     margin-left: 1vw;
 
 }
@@ -79,12 +86,17 @@ nav.sticky{
 .content {
     width: 100%;
     text-align:center;
+    height: 100vh;
+    padding: 35vh;
+    justify-content: center;
+    
 }
 .content h1 {
     font-size: 15vw;
     color: rgb(251, 248, 248);
     font-weight:600;
     transition: 0.5s;
+    
 
 }
 .content h1:hover{
@@ -105,6 +117,7 @@ nav.sticky{
 .content a:hover{
     font-size: 3vw;
     margin-top: 1px;
+    color: rgb(246, 236, 236);
 }
 .back-video {
     position:absolute;
@@ -130,63 +143,71 @@ nav.sticky{
 .container{
     width: 100%;
     height: 100vh;
+    
 }
 .slides {
     width: 100%;
     height: 100vh;
+    margin-top: 0;
+    margin-bottom: 0;
 }
 
 
 .conocenos{
-    background-color: rgb(225, 204, 177);
+    background-color: rgb(107, 105, 105);
+    
+    width: 100%;
+    margin-top:0vw;
 }
 .conjunto{
-    display: inline-flex;
-    justify-content: space-around;
+    display:flex;
+    justify-content: center;
+    margin-bottom: 2vw;
 }
 .conocenos h2{
-    background-color:rgb(145, 122, 64);
-    background-size: 100%;
     text-align: center;
     width: 100%;
-    font-weight:0;
+    font-weight:bold;
     font-size: 7vw;
     padding: 1vh ;
-    margin-bottom: 5vw;
+    margin-bottom: 2vw;
+    font-weight:800;
+    color: black;
 }
 
 .conocenos p{
-    background-color:bisque;
-    border-style: groove;
-    border-color:burlywood;
+    background-color: rgb(142, 140, 140) ;
+    border-style:inset;
+    border-color:black;
     border-radius: 5vw;
-    border-width: 1vw;
+    border-width: .7vw;
     text-align:left;
-    padding: 8vh;
+    padding: 4vh;
     display: flex;
-    width: 40%;
+    width: 80%;
     justify-content:space-around;
 }
 
 .conocenos p:hover{
-    border-style:ridge;
-    border-color:burlywood;
-    border-radius: 5vw;
-    border-width: 1vw;
-    animation:alternate;
-    width: 50%;
+    border-style:outset;
+    border-color:black;;
 }
 .foto-jovenes{
-    width: 40%;
-    background-color:bisque;
-    border-style:double;
+    width: 60%;
+    opacity: 90%;
+    /* border-style:double;
     border-color:burlywood;
     border-radius: 5vw;
-    border-width: 1vw;
+    border-width: 1vw; */
 }
 
-.foto-jovenes:hover{
-    width: 50%;
+#el-team{
+    text-align:center;
+    justify-content: space-around;
+    display: flex;
+    width: 100%;
+    
+   
 }
 
 
@@ -202,8 +223,632 @@ div{
     width: 100vw!important;
 }
 
+.fondo {
+    background-color: black!important;
+} 
+.container-fluid{
+    background-color: rgb(29, 26, 26)!important;
+}
+.offcanvas-title{
+    font-size: 4.5vw!important;
+}
+.offcanvas-header{
+    background-color: rgb(29, 26, 26)!important;
+}
+.offcanvas-body{
+    background-color: rgb(33, 31, 31)!important;
+}
+.dropdown-item{
+    background-color:rgb(33, 31, 31)!important;
+} 
+
+.dropdown-menu-dark{
+    --bs-dropdown-bg:rgb(33, 31, 31)!important;
+}
+
+
+@media screen and (min-width:700px ){
+    nav .logo{
+        width: 5vw ;
+    }
+    
+}
+
+
+
+.slides-2 .Cocktails{
+    
+    background-image:url(/imagenes/fondo-cocktail.jpeg);
+    background-color: black;
+    background-size:contain;
+    background-repeat: no-repeat;
+    background-position:center;
+    width: 100%;
+    margin-top: 0vw;
+    
+}
+.Cocktails h2{
+    text-align: center;
+    width: 100%;
+    font-weight:0;
+    font-size: 7vw;
+    padding: 5vh ;
+    margin-bottom: 5vw;
+    color:rgb(119, 113, 113);
+    text-decoration: underline;
+    font-weight:bold;
+}
+
+.lista li a{
+    color: rgb(119, 113, 113);
+    text-decoration:none;
+    width: 10%;
+    font-weight: 700;
+    font-size: 1.5vw;
+}
+.lista .clase-f{
+    font-size: 1vw;
+    width: 25%;
+    margin-left: 3vw;
+    color: rgb(73, 71, 71);
+}
+
+.lista .clase-f:hover{
+    color: rgb(106, 102, 102)!important;
+    opacity: 110%;
+    border:darkorange ;
+    border-style: double;
+    border-width: 20%;
+    border-radius: 1vw;
+    width: 25%;
+    padding: 1%;
+    text-align: center;
+    
+    .clase-f li a{
+        color:rgb(170, 165, 165);
+        text-decoration:none;
+        width: 10%;
+        font-weight: 900;
+    }
+    
+}
+.lista li a:hover{
+    color:rgb(170, 165, 165);
+    text-decoration:none;
+    width: 10%;
+    font-weight: 900;
+    height: 100vh;
+    
+}
+
+
+
+.slides-2 .Beer{
+    background-image:url(/imagenes/b&w-beer-2.jpg);
+    background-color: black;
+    background-size:contain;
+    background-repeat: no-repeat;
+    background-position:center; 
+    margin-bottom: 0%;
+    width: 100%;
+    margin-top: 0vw;
+    
+    
+}
+
+.Beer h2{
+    text-align: center;
+    width: 100%;
+    font-weight:0;
+    font-size: 7vw;
+    padding: 0vh ;
+    margin-bottom: 5vw;
+    color: rgb(119, 113, 113);
+    text-decoration: underline;
+    font-weight:bold;
+    padding-top: 15vh;
+}
+
+
+.lista-birra li a{
+    color: rgb(119, 113, 113);
+    text-decoration:none;
+    width: 10%;
+    font-weight: 700;
+    font-size: 1.5vw;
+}
+.lista-birra .clase-B{
+    font-size: 1vw;
+    width: 25%;
+    margin-left: 3vw;
+    color: rgb(73, 71, 71);
+}
+
+.clase-B:hover{
+    color: rgb(106, 102, 102)!important;
+    opacity: 110%;
+    border:rgb(172, 130, 25) ;
+    border-style:solid;
+    border-width: .3vw;
+    border-radius: 10vw;
+    width: 15%;
+    text-align: center;
+    padding: 1vw;
+    
+    
+}
+.lista-birra li a:hover{
+    color:rgb(170, 165, 165);
+    text-decoration:none;
+    width: 10%;
+    font-weight: 900;
+}
 
 
 
 
+.Non-Alcohol h2{
+    text-align: center;
+    width: 100%;
+    font-weight:0;
+    font-size: 7vw;
+    padding: 0vh ;
+    margin-bottom: 5vw;
+    color: rgb(119, 113, 113);
+    text-decoration: underline;
+    font-weight:bold;
+    padding-top: 15vh;
+}
 
+.slides-2 .Non-Alcohol{
+    background-image: url(/imagenes/cocacolacomun.jpg);
+    background-color: black;
+    background-size:contain;
+    background-repeat: no-repeat;
+    background-position:center; 
+    margin-top: 0%;
+    width: 100%;
+    margin-top: 0vw;
+    
+    
+}
+.lista-non-alc li a{
+    color: rgb(119, 113, 113);
+    text-decoration:none;
+    width: 10%;
+    font-weight: 700;
+    font-size: 1.5vw;
+    margin-left: 3vw;
+}
+.lista-non-alc li a:hover{
+    color:rgb(170, 165, 165);
+    text-decoration:none;
+    width: 10%;
+    font-weight: 900;
+    border:rgb(116, 11, 11) ;
+    border-style:solid;
+    border-width: .3vw;
+    border-radius: 10vw;
+    text-align: center;
+    padding: 1vw;
+}
+.Combos h2{
+    text-align: center;
+    width: 100%;
+    font-weight:0;
+    font-size: 7vw;
+    padding: 0vh ;
+    margin-bottom: 5vw;
+    color: rgb(119, 113, 113);
+    text-decoration: underline;
+    font-weight:bold;
+    padding-top: 15vh;
+}
+.slides-2 .Combos{
+    background-image: url(/imagenes/fernet+coca.jpg);
+    background-color: black;
+    background-size:contain;
+    background-repeat: no-repeat;
+    background-position:center; 
+    
+    width: 100%;
+    margin-top: 0vw;
+    height: 100vh;
+    
+    
+}
+.Combos .lista-combos h3{
+    font-size: 2vw;
+    color: grey;
+    font-weight: 700;
+    text-decoration:dotted;
+}
+.lista-combos li a{
+    color: rgb(119, 113, 113);
+    text-decoration:none;
+    width: 10%;
+    font-weight: 700;
+    font-size: 1.5vw;
+    margin-left: 3vw;
+}
+.lista-combos p {
+    font-size: 1vw;
+   width: 55%;
+    margin-left: 3vw;
+    color: rgb(73, 71, 71);
+}
+/* .combo-fernet{
+    font-size: 1vw;
+    width: 25%;
+    margin-left: 3vw;
+    color: rgb(73, 71, 71);
+} */
+/* .combo-fernet:hover{
+    color:rgb(170, 165, 165);
+    text-decoration:none;
+    width: 10%;
+    font-weight: 900;
+    border:rgb(116, 11, 11) ;
+    border-style:solid;
+    border-width: .3vw;
+    border-radius: 10vw;
+    text-align: center;
+    padding: 1vw;
+}  */
+
+
+
+
+.servicios h2{
+    text-align: center;
+    width: 100%;
+    font-weight:0;
+    font-size: 7vw;
+    padding: 1vh ;
+    margin-bottom: 0vw;
+    font-weight:800;
+}
+.servicios{
+    background-color: rgb(63, 63, 62);
+}
+.contenido-servicios p{
+    font-size: 3vw;
+    font-weight:800;
+}
+
+
+#tarjeta{
+    background-color: transparent;
+    border-color: transparent;
+}
+#boton{
+    background-color:transparent;
+    width: 35vw;
+    font-size: 4vw;
+    font-weight:800;
+    color: rgb(42, 40, 40);
+    border-radius: 5vw;
+}
+#boton-2{
+    background-color:transparent;
+    width: 35vw;
+    font-size: 4vw;
+    font-weight:800;
+    color: rgb(42, 40, 40);
+    border-radius: 5vw;
+}
+#boton:hover{
+    background-color: aqua;
+}
+
+
+.contacto{
+    display: flex; 
+    margin-top: 0%;
+    width: 100%;
+    color: black;
+}
+#contactanos{
+    background-color: rgb(90, 88, 88);
+}
+.primera-mitad{
+    width: 100%;
+    margin-left: 15%;
+    margin-right: 5%;
+    margin-top: 3%;
+    
+    /* margin-left: 25%;
+    margin-right: 40%; */
+}
+.primera-mitad h2{
+    font-weight: bold;
+}
+.primera-mitad li{
+    list-style: none;
+}
+.segunda-mitad li{
+    list-style: none;
+}
+.segunda-mitad h2{
+    font-weight: bold;
+}
+.segunda-mitad{
+    margin-top: 3%;
+    width: 100%;
+    padding-left: 5%;
+   
+    /* margin-right: 10%; */
+}
+.segunda-mitad a {
+    color:rgb(37, 37, 37);
+}
+.segunda-mitad a:hover {
+    color:rgb(59, 59, 59);
+}
+.wpp{
+    display: inline-flex;
+    width: 100%;
+}
+.insta{
+    margin-top: 2vw;
+    font-size: 3vw;
+    margin-left: 2vw;
+    display: inline-flex;
+    width: 100%;
+}
+.cosas {
+    display: inline-flex;
+}
+.wpp p{
+    width: 100%;
+    padding-left: 4%;
+    font-size: 1.4vw;
+}
+.slides-2 {
+    width: 100%;
+    
+    margin-top: 0;
+    margin-bottom: 0;
+}
+.body{
+    background-color: white;
+}
+@media screen and (max-width:700px){
+    .cartulina{
+        width: 70%!important;
+    }
+    .lista-combos p{
+        font-size: 2vw;
+    }
+    .Combos .lista-combos h3 {
+        font-size: 4vw;
+    }
+    .lista-combos li a{
+        font-size: 3vw;
+    }
+    .lista-non-alc li a{
+        font-size: 3vw;
+    }
+    .lista-non-alc .list-group-item{
+        margin-bottom: 3vw;
+    }
+    .lista-non-alc li a:hover{
+        padding: 2vw;
+    }
+    .lista-birra li a{
+        font-size: 3vw;
+    }
+    .lista-birra .clase-B{
+        font-size: 2.5vw;
+        width: 35%;
+    }
+    
+    .lista li a{
+        font-size: 3vw;
+    }
+    .lista .clase-f{
+        font-size: 2.5vw;
+        width: 25%;
+    }
+    .lista .clase-f:hover{
+        width: 40%;
+    }
+    .conjunto{
+        display:block;
+        align-items: center;
+        justify-content: space-around;
+        margin-left: 20%;
+        margin-top: 10vw;
+        
+    }
+    .conjunto p {
+        font-size: 2.5vw;
+        width: 80%;
+        padding: 5vh;
+    }
+    .conocenos p:hover{
+        width: 80%;
+    }
+    .foto-jovenes{
+        font-size: 2.5vw;
+        width: 80%;
+        padding: 0vh;
+        margin-top: 8vw;
+    }
+    .foto-jovenes:hover{
+        width: 89%;
+        margin-left: -4%;
+    }
+    .content a:hover{
+        font-size: 2vw;
+        margin-top: 20px;
+        color: black;
+        background-color: white;
+        border-color: transparent;
+        font-weight: 800;
+    }
+    .content h1 {
+        font-size: 15vw;
+        color: rgb(251, 248, 248);
+        font-weight:600;
+        transition: 0.5s;
+        margin-left: -112%;
+    
+    }
+    .nav-item{
+        font-size: 3vw;
+    }
+    .nav-link:hover{
+        font-size: 4vw;
+    }
+    .dropdown-item{
+        font-size: 1.8vw;
+    }
+    .dropdown-item:hover{
+        font-size: 2.5vw;
+    }
+}
+
+.navbar-dark{
+    background: black;
+}
+
+/* .navbar ,.navbar-dark, .bg-dark, .fixed-top
+{
+    position: fixed;
+    top: 0;
+    right: 0;
+    left: 0;
+    z-index: 1030;
+    padding: 0;
+} */
+
+.navbar>.container, .navbar>.container-fluid, .navbar>.container-lg, .navbar>.container-md, .navbar>.container-sm, .navbar>.container-xl, .navbar>.container-xxl{
+    background-color: black;
+}
+.navbar {
+    --bs-navbar-padding-y: 0!important;
+}
+
+
+
+.cocktails-caratula{
+    font-size: 3vw;
+    text-align: center;
+    position: absolute;
+    top: 40%;
+    left: 35%;
+}
+.link-cocktails-caratula{
+    font-size: 2vw;
+    text-align: center;
+    position: absolute;
+    top: 60%;
+    left: 40%;
+    text-decoration: none;
+    color: rgb(246, 236, 236);
+    font-size: 1vw;
+    border: 2px solid rgb(251, 249, 249);
+    padding: .5vw 2vh;
+    border-radius: 50px;
+}
+
+.card .text-bg-dark{
+    width: 40%;
+}
+
+
+.cartulina{
+    width: 30%;
+    margin-top: 4%;
+    margin-left: 13%;
+    margin-right: 2%;
+    display: inline-block;
+    background-color: rgb(0, 0, 0);
+}
+#fotitos-cartulina{
+    background-color: black;
+}
+#img-birra-caratula{
+    opacity: 70%;
+}
+
+#beer-caratula{
+    left: 30%!important;
+}
+#beer-caratula-ver{
+    left: 30%!important;
+}
+#img-birra-caratula:hover{
+    opacity: 100%!important;
+}
+
+#combos-car{
+    top: 13%!important;
+    left: 48%;
+}
+#combos-car-ver{
+    top: 33%!important;
+    left: 55%;
+}
+#cocktails-cartu{
+    top: 38%!important;
+    left: 20%;
+}
+#cocktails-cartu-ver{
+    top: 58%!important;
+    left: 29%;
+}
+#nonalc{
+    top: 58%!important;
+    left: 22%;
+}
+#nonalc-ver{
+    top: 78%!important;
+    left: 48%;
+}
+
+.cocktails-2{
+    /* background-image:url(/imagenes/fondo-cocktail.jpeg); */
+    background-color: black;
+    background-size:contain;
+    background-repeat: no-repeat;
+    background-position:center;
+    width: 100%;
+    margin-top: 0vw;
+}
+.cocktails-2 h2{
+    text-align: center;
+    width: 100%;
+    font-weight:0;
+    font-size: 7vw;
+    padding: 5vh ;
+    margin-bottom: 2vw;
+    color:rgb(119, 113, 113);
+    text-decoration: underline;
+    font-weight:bold;
+}
+#cocktails-2-contenido{
+    display: inline-flex;
+    background-color: rgb(65, 64, 64);
+    margin-bottom: 1vw;
+    justify-content: space-around;
+}
+#cocktails-2-contenido p{
+    color: rgb(167, 166, 166);
+    font-size: 1vw;
+}
+#cocktails-2-contenido h5{
+    font-size: 1.7vw;
+    color: white;
+    font-weight: bold;
+}
+#cocktails-2-contenido {
+    opacity: 75%;
+}
+#cocktails-2-contenido:hover{
+    opacity: 100%;
+}
+#boton-carrito{
+    font-weight: bold;
+}
