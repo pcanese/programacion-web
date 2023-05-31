@@ -84,13 +84,17 @@ nav.sticky{
 
 
 .content {
+    flex-direction: column;
+    display: flex;
     width: 100%;
     text-align:center;
     height: 100vh;
-    padding: 35vh;
+    /* padding: 35vh; */
     justify-content: center;
+    align-items: center;
     
 }
+
 .content h1 {
     font-size: 15vw;
     color: rgb(251, 248, 248);
@@ -126,19 +130,6 @@ nav.sticky{
     z-index: -1;
 }
 
-@media (min-aspect-ratio: 16/9) {
-    .back-video{
-        width: 100%;
-        height: auto;
-    }
-}
-
-@media (max-aspect-ratio: 16/9) {
-    .back-video{
-        width: auto;
-        height: 100%;
-    }
-}
 
 .container{
     width: 100%;
@@ -614,6 +605,24 @@ div{
     background-color: white;
 }
 @media screen and (max-width:700px){
+    .back-video{
+        height: 100%;
+        object-fit: cover;
+        
+    }
+    
+    .content {
+        flex-direction: column;
+        display: flex;
+        width: 100%;
+        text-align:center;
+        height: 100vh;
+        /* padding: 35vh; */
+        justify-content: center;
+        align-items: center;
+        
+    }
+    
     .cartulina{
         width: 70%!important;
     }
@@ -686,14 +695,12 @@ div{
         background-color: white;
         border-color: transparent;
         font-weight: 800;
+        transition: 0.5s;
     }
     .content h1 {
         font-size: 15vw;
         color: rgb(251, 248, 248);
         font-weight:600;
-        transition: 0.5s;
-        margin-left: -112%;
-    
     }
     .nav-item{
         font-size: 3vw;
