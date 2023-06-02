@@ -106,6 +106,7 @@ nav.sticky{
 .content h1:hover{
     -webkit-text-stroke: 2px #fff;
     color: transparent;
+    transition: 1s;
 }
 
 .content a {
@@ -117,11 +118,17 @@ nav.sticky{
     padding: 1vw 4vh;
     border-radius: 50px;
     margin-top: 20px;
+    
 }
 .content a:hover{
-    font-size: 3vw;
+    /* font-size: 3vw;
     margin-top: 1px;
-    color: rgb(246, 236, 236);
+    color: rgb(246, 236, 236); */
+    color: black;
+    background-color: white;
+    border-color: transparent;
+    /* font-weight: 800; */
+    transition: 1.5s;
 }
 .back-video {
     position:absolute;
@@ -537,10 +544,15 @@ div{
     display: flex; 
     margin-top: 0%;
     width: 100%;
-    color: black;
+    /* color: black; */
+    color:rgb(129, 124, 124);
+
 }
 #contactanos{
-    background-color: rgb(90, 88, 88);
+    /* background-color: rgb(90, 88, 88); */
+    background-color: black;
+    border-top: var(--bs-border-width) var(--bs-border-style) var(--bs-border-color)!important;
+    margin-top: 2vw;
 }
 .primera-mitad{
     width: 100%;
@@ -572,6 +584,7 @@ div{
 }
 .segunda-mitad a {
     color:rgb(37, 37, 37);
+    border-radius: 50%;
 }
 .segunda-mitad a:hover {
     color:rgb(59, 59, 59);
@@ -586,9 +599,11 @@ div{
     margin-left: 2vw;
     display: inline-flex;
     width: 100%;
+    
 }
 .cosas {
     display: inline-flex;
+    
 }
 .wpp p{
     width: 100%;
@@ -602,7 +617,7 @@ div{
     margin-bottom: 0;
 }
 .body{
-    background-color: white;
+    background-color: black;
 }
 
 .navbar-dark{
@@ -753,6 +768,92 @@ div{
 }
 
 
+
+
+
+/*  */
+:root{
+    --facebook: #3b5999;
+    --instagram: #e4405f;
+    --whatsapp: #25d366;
+    --twitter: #0ec6ef; 
+}
+
+.footer-conteiner{
+    display: flex;
+    height: 15vh;
+    align-items: center;
+    /* justify-content: center; */
+    align-content: space-around;
+    margin-left: -1.5vw;
+}
+
+.footer-conteiner ul li{
+    display: inline-block;
+    margin: 0 5px;
+    width:50px;
+    height:50px;
+    text-align: center;
+}
+
+.footer-conteiner ul li a{
+    display: block;
+    padding: 0 10px;
+    background: #333;
+    color:#FAFAFA;
+    border-radius: 50%;
+    line-height: 50px;
+    font-size: 25px;
+    box-shadow: 0 3px 5px 0 rgba(0,0,0,.2);
+    transition: .2s;
+
+}
+.carousel img{
+  margin-top: 10px;
+  background-size: cover;
+	background-position: center;
+	color: #ffffff;
+	transition: all 0.45s ease-in-out;
+	box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.5); 
+  width: 100%;
+  max-height: 700px;
+}
+
+.carousel img:hover{
+  transform: translateY(-10px);
+  box-shadow: #333;
+  transition: opacity 25 ease-in-out;
+}
+
+.footer-conteiner ul:hover a{
+    filter:blur(2px);
+}
+
+.footer-conteiner ul li a:hover{
+    transform: translateY(-3px)scale(1.05);
+    box-shadow: 0 5px 5px 0 rgba(0,0,0,.4);
+    filter: none;
+}
+
+.footer-conteiner ul li .facebook:hover{
+    background: var(--facebook);
+}
+.footer-conteiner ul li .instagram:hover{
+    background: var(--instagram);
+}
+.footer-conteiner ul li .whatsapp:hover{
+    background: var(--whatsapp);
+}
+.footer-conteiner ul li .twitter:hover{
+  background: var(--twitter);
+}
+/*  */
+
+
+
+
+
+
 @media screen and (max-width:700px){
     .back-video{
         height: 100%;
@@ -842,8 +943,8 @@ div{
         color: black;
         background-color: white;
         border-color: transparent;
-        font-weight: 800;
-        transition: 0.5s;
+        /* font-weight: 800; */
+        transition: 1.5s;
     }
     .content h1 {
         font-size: 15vw;
@@ -883,4 +984,8 @@ div{
     #Contacto i{
         font-size: 20px;
     }
+    .footer-conteiner{
+        margin-left: -10vw;
+    }
+
 }
