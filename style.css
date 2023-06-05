@@ -1047,4 +1047,20 @@ div{
     .foto-jovenes{
         margin-top: 0vw;
     }
+    /* elementos navbar */
+    .nav-item {
+        font-size: 6vw;
+    }
+    .offcanvas-header {
+        font-size: 4vw;
+    }
+    .offcanvas-title{
+        font-size: 7vw!important;
+    }
+    .navbar-nav .nav-link:hover {
+        font-size: 8vw;
+    }
+    .dropdown-menu-dark .dropdown-item {
+        font-size: 4vw;
+    }
 }
