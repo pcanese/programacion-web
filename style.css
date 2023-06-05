@@ -847,12 +847,15 @@ div{
 .footer-conteiner ul li .twitter:hover{
   background: var(--twitter);
 }
+/* casita nosotros */
+.fa-solid, .fas{
+    margin-left: 1%;
+    margin-top: 1%;
+}
+
+
+
 /*  */
-
-
-
-
-
 
 @media screen and (max-width:700px){
     .back-video{
@@ -987,5 +990,61 @@ div{
     .footer-conteiner{
         margin-left: -10vw;
     }
-
+    #cocktails-cartu-ver {
+        top: 55%!important;
+        left: 23%;
+        font-size: 2vw;
+    }
+    #cocktails-cartu {
+        top: 38%!important;
+        left: 20%;
+        font-size: 5vw;
+    }
+    #beer-caratula {
+        left: 30%!important;
+        font-size: 5vw;
+    }
+    #beer-caratula-ver {
+        left: 26%!important;
+        font-size: 2vw;
+        top: 55%;
+    }
+    #nonalc {
+        top: 58%!important;
+        left: 22%;
+        font-size: 5vw;
+    }
+    #nonalc-ver {
+        top: 74%!important;
+        left: 28%;
+        font-size: 2vw;
+    }
+    #combos-car {
+        top: 13%!important;
+        left: 48%;
+        font-size: 5vw;
+    }
+    #combos-car-ver {
+        top: 28%!important;
+        left: 48%;
+        font-size: 2vw;
+    }
+    /* casita nosotros */
+    .fa-solid, .fas {
+        font-weight: 900;
+        font-size: 5vw;
+        margin-left: 2%;
+        margin-top: 2%;
+    }
+    .conjunto{
+        margin-top: 0vw;
+    }
+    .conjunto p {
+    font-size: 2.5vw;
+    width: 80%;
+    padding: 1.5vh;
+    } 
+    .foto-jovenes{
+        margin-top: 0vw;
+    }
 }
