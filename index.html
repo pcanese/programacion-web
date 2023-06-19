@@ -17,13 +17,62 @@
     <nav class="navbar navbar-dark bg-dark fixed-top" class="fondo" >
         <div class="container-fluid">
           <a class="navbar-brand" href="#"><img src="imagenes//LogoBonsaiBlanco-01.png" class ="logo"></a>
+      
+
+
+          <!-- carrito -->
+          <button class="navbar-toggler" type="button" data-bs-toggle="offcanvas" data-bs-target="#offcanvasNavbar" aria-controls="offcanvasNavbar" aria-label="Toggle navigation"
+          id="carrozza">
+            <span class="fa-solid fa-cart-shopping"></span>
+          </button>
+          <div class="offcanvas offcanvas-end" tabindex="-1" id="offcanvasNavbar" aria-labelledby="offcanvasNavbarLabel">
+            <div class="offcanvas-header">
+              <h5 class="offcanvas-title" id="offcanvasNavbarLabel">Carrito</h5>
+              <button type="button" class="btn-close btn-close-white" data-bs-dismiss="offcanvas" aria-label="Close" ></button>
+            </div>
+
+            <div class="offcanvas-body">
+
+              
+              <div class="pablo-carrozza" >
+                <h2 id= "tituloCarrito">Aún no has seleccionado ningún producto</h2>
+                <ul id="MuestraProductos">
+                  <li></li>
+                </ul>
+                <div class="d-grid gap-2 col-9 mx-auto" >
+                    <button class="btnnbtn-primary" type="button" disabled>
+                         <div id="suma_precio">Total: $0</div>
+                         <button id="vaciar" type="button" class="btn btn-primary " onclick="Eliminar_seleccion()">Vaciar Carrito</button>
+
+                         <button  type="submit" class="finalizar_compra">Finalizar Compra</button>
+<!-- 
+                         <form action="https://formsubmit.co/pcanese@itba.edu.ar" method="POST" target="_blank">
+                          <input type="text" name="name" required placeholder="Ingrese su nombre">
+                          <input type="email" name="email" required placeholder="Ingrese su mail">
+                          <button  type="submit" class="finalizar_compra">Finalizar Compra</button>
+
+                         </form> -->
+                        
+                    </button>   
+                </div>  
+                
+            </div>
+            </div>
+          </div>
+          
+            
+          
+            <!-- TERMINA EL CARRITO -->
+
+
+
           <button class="navbar-toggler" type="button" data-bs-toggle="offcanvas" data-bs-target="#offcanvasDarkNavbar" aria-controls="offcanvasDarkNavbar" aria-label="Toggle navigation">
             <span class="navbar-toggler-icon"></span>
           </button>
           <div class="offcanvas offcanvas-end text-bg-dark" tabindex="-1" id="offcanvasDarkNavbar" aria-labelledby="offcanvasDarkNavbarLabel">
             <div class="offcanvas-header">
               <h5 class="offcanvas-title" id="offcanvasDarkNavbarLabel">Bonsai</h5>
-              <button type="button" class="btn-close btn-close-white" data-bs-dismiss="offcanvas" aria-label="Close"></button>
+              <button type="button" class="btn-close btn-close-white" data-bs-dismiss="offcanvas" aria-label="Close" ></button>
             </div>
             <div class="offcanvas-body">
               <ul class="navbar-nav justify-content-end flex-grow-1 pe-3">
@@ -47,9 +96,7 @@
                     <li><a class="dropdown-item" href="#Combos">Combos</a></li>
                   </ul>
                 </li>
-                <li class="nav-item">
-                    <a class="nav-link" href="/servicios.html">Servicios</a>
-                  </li>
+                
                 <li class="nav-item">
                     <a class="nav-link" href="#Contacto">Contacto</a>
                   </li>
@@ -79,7 +126,7 @@
           <img src="/imagenes/cocktail-background.jpeg" class="card-img" alt="...">
           <div class="card-img-overlay">
             <h5  class="cocktails-caratula" id="cocktails-cartu">Cocktails</h5>
-            <a href="#Cocktails" class="link-cocktails-caratula" id="cocktails-cartu-ver">Ver mas</a>
+            <a href="#Cocktails" class="link-cocktails-caratula" id="cocktails-cartu-ver" id="ver_mas" >Ver mas</a>
           
           </div>
         </div>
@@ -120,164 +167,61 @@
     
     </div>
     
-    <div class ="slides-2">
-      <div class="Cocktails" id="Cocktails">
-          <h2>Cocktails</h2>
-          <ul class="lista">
-            <div class="clase-f">
-            <li class="list-group-item"><a href="">Fernet Branca - $1000</a> </li>
-            <p >750ml. Segun los expertos, la cantidad ideal. Una ganga...</p></div>
-            <div class="clase-f">
-            <li class="list-group-item"><a href="">Gordons Gin</a></li>
-            <p>Con limon siempre y a cualquier hora del dia</p></div>
-            <div class="clase-f">
-            <li class="list-group-item"><a href="">Smirnoff Vodka</a></li>
-            <p>Un trago sin prejuicios...</p></div>
-            <div class="clase-f">
-            <li class="list-group-item"><a href="">Absolut Vodka</a></li>
-            <p>Llego la botella absoluta</p></div>
-            <div class="clase-f">
-            <li class="list-group-item"><a href="">Sernova Vodka</a></li>
-            <p>Una alternativa "fresh"</p></div>
-            <div class="clase-f">
-            <li class="list-group-item"><a href="">Brighton Gin</a></li>
-            <p>Para sumar nuevas experiencias</p></div>
-            <div class="clase-f">
-            <li class="list-group-item"><a href="">Carpano Rosso</a></li>
-            <p>Il primo vermouth</p></div>
-          </ul>
-      </div>
-  </div>
   <div class="slides-2">
-    <div class="Beer" id="Beers x6">
-      <h2>Beers x6</h2>
-      <ul class="lista-birra">
-        <div class="clase-B">
-        <li class="list-group-item"><a href="">Stella Artois</a> </li>
-        <p >Champions League</p></div>
-        <div class="clase-B">
-        <li class="list-group-item"><a href="">Andes Roja</a></li>
-        <p>Cervez especial...</p></div>
-        <div class="clase-B">
-        <li class="list-group-item"><a href="">Andes IPA</a></li>
-        <p>Nuevas aventuras</p></div>
-        <div class="clase-B">
-        <li class="list-group-item"><a href="">Andes Rubia</a></li>
-        <p>Puro sabor...</p></div>
-        <div class="clase-B">
-        <li class="list-group-item"><a href="">Quilmes Clasica</a></li>
-        <p>Argentina, como vos</p></div>
-        <div class="clase-B">
-        <li class="list-group-item"><a href="">Budweiser</a></li>
-        <p>Las Bud son amigas...</p></div>
-        <div class="clase-B">
-        <li class="list-group-item"><a href="">Amstel Lager</a></li>
-        <p>Para tomar con amigos</p></div>
-      </ul>
-    </div>
-  </div>
-  <div class="slides-2">
-    <div class="Non-Alcohol" id="Non-Alcohol">
-    <h2>Non-Alcohol</h2>
-    <ul class="lista-non-alc">
-        <li class="list-group-item"><a href="">Coca-Cola 2.25l</a></li>
-        <li class="list-group-item"><a href="">Coca Zero 2.25l</a></li>
-        <li class="list-group-item"><a href="">Sprite 2.25l</a></li>
-        <li class="list-group-item"><a href="">Gatorade 1.25l</a></li>
-        <li class="list-group-item"><a href="">PDT Tonica 1.5l</a></li>
-        <li class="list-group-item"><a href="">PDT Pomelo 1.5l</a></li>
-        <li class="list-group-item"><a href="">Levite Naranja 1.5l</a></li>
-        <li class="list-group-item"><a href="">Speed XL</a></li>
-    </ul>
-  </div>
-  </div>
-  <div class="slides-2">
-    <div class="Combos" id="Combos">
-      <h2>Combos</h2>
-      <ul class="lista-combos">    
-        <h3>FERNET</h3>
-        <div class="combo-fernet">
-        <li class="list-group-item"><a href="">Combo 1 </a> </li>
-        <p >Fernet 750cl y cocucha 2.25. Dupla a lo Diego-Cani
-        </p></div>
-        <div class="combo-fernet">
-          <li class="list-group-item"><a href="">Combo XL </a> </li>
-          <p >Branca 750cl y dos cocuchas 2.25. Para que no te quedes con sed
-          </p></div>
-          <h3>GIN</h3>
-          <div class="combo-fernet">
-          <li class="list-group-item"><a href="">Combo 2 </a> </li>
-          <p >Gin Gordons acompanado de dos tonicas, para disfrutar del clasico mas antiguo. Pura clase
-          </p></div>
-          <h3>VODKA</h3>
-        <div class="combo-fernet">
-        <li class="list-group-item"><a href="">Combo 3 </a> </li>
-        <p >Vodka y dos Gatorade 1.25l. Combustible del bueno
-        </p></div>
-        <div class="combo-fernet">
-          <li class="list-group-item"><a href="">Combo 4 </a> </li>
-          <p >Llego el Diesel para quedarse. Sumale dos speeds a tu combo vodka para arrancar bien arriba
-          </p></div>
-      </div>
-      </ul>
-    </div>
-  </div>
-  
-  <div class="slides-2">
-    <div class="cocktails-2">
+    <div class="cocktails-2" id="Cocktails">
       <h2>Cocktails</h2>
       <div class="card-contenedor-gpt">
       <div class="card" style="width: 18rem;" id="cocktails-2-contenido">
         <img src="/imagenes/fernet-2.jpeg" class="card-img-top" >
         <div class="card-body" >
-          <h5 class="card-title">Fernet Branca - $1000</h5>
+          <h5 class="card-title">Fernet Branca - $2000</h5>
           <p class="card-text">750ml. Segun los expertos, la cantidad ideal. Una ganga...</p>
-          <a href="#" class="btn btn-primary">Agregar al carrito</a>
+          <button onclick="tuCompra(2000, 'Fernet Branca - $2000' )" class="btn btn-primary" >Agregar al carrito</button>
         </div>
       </div></div>
       <div class="card-contenedor-gpt">
       <div class="card" style="width: 18rem;" id="cocktails-2-contenido">
         <img src="/imagenes/Gin-Gordons.jpg" class="card-img-top" >
         <div class="card-body" >
-          <h5 class="card-title">Gordons Gin - $1000</h5>
+          <h5 class="card-title">Gordons Gin - $2200</h5>
           <p class="card-text">Con limon siempre y a cualquier hora del dia</p>
-          <a href="#" class="btn btn-primary">Agregar al carrito</a>
+          <button onclick="tuCompra(2200, 'Gordons Gin - $2200' )" class="btn btn-primary" >Agregar al carrito</button>
         </div>
       </div></div>
       <div class="card-contenedor-gpt">
       <div class="card" style="width: 18rem;" id="cocktails-2-contenido">
         <img src="/imagenes/smirnoff.jpeg" class="card-img-top" >
         <div class="card-body" >
-          <h5 class="card-title">Smirnoff Vodka - $1000</h5>
+          <h5 class="card-title">Smirnoff Vodka - $1500</h5>
           <p class="card-text">Un trago sin prejuicios...</p>
-          <a href="#" class="btn btn-primary">Agregar al carrito</a>
+          <button onclick="tuCompra(1500, 'Smirnoff Vodka - $1500' )" class="btn btn-primary" >Agregar al carrito</button>
         </div>
       </div></div>
       <div class="card-contenedor-gpt">
       <div class="card" style="width: 18rem;" id="cocktails-2-contenido">
         <img src="/imagenes/absolut-vodka.jpeg" class="card-img-top" >
         <div class="card-body" >
-          <h5 class="card-title">Absolut Vodka - $1000</h5>
+          <h5 class="card-title">Absolut Vodka - $5000</h5>
           <p class="card-text">Llego la botella absoluta</p>
-          <a href="#" class="btn btn-primary">Agregar al carrito</a>
+          <button onclick="tuCompra(5000, 'Absolut Vodka - $5000' )" class="btn btn-primary" >Agregar al carrito</button>
         </div>
       </div></div>
       <div class="card-contenedor-gpt">
       <div class="card" style="width: 18rem;" id="cocktails-2-contenido">
         <img src="/imagenes/sernova.jpeg" class="card-img-top" >
         <div class="card-body" >
-          <h5 class="card-title">Sernova Vodka - $1000</h5>
+          <h5 class="card-title">Sernova Vodka - $1300</h5>
           <p class="card-text">Una alternativa "fresh"</p>
-          <a href="#" class="btn btn-primary">Agregar al carrito</a>
+          <button onclick="tuCompra(1300, 'Sernova Vodka - $1300' )" class="btn btn-primary" >Agregar al carrito</button>
         </div>
       </div></div>
       <div class="card-contenedor-gpt">
       <div class="card" style="width: 18rem;" id="cocktails-2-contenido">
         <img src="/imagenes/Brighton-gin.jpeg" class="card-img-top" >
         <div class="card-body" >
-          <h5 class="card-title">Brighton Gin - $1000</h5>
+          <h5 class="card-title">Brighton Gin - $1800</h5>
           <p class="card-text">Para sumar nuevas experiencias</p>
-          <a href="#" class="btn btn-primary">Agregar al carrito</a>
+          <button onclick="tuCompra(1800, 'Brighton Gin - $1800' )" class="btn btn-primary" >Agregar al carrito</button>
         </div>
       </div></div>
       <div class="card-contenedor-gpt">
@@ -286,7 +230,7 @@
         <div class="card-body" >
           <h5 class="card-title">Carpano Rosso - $1000</h5>
           <p class="card-text">Il primo vermouth</p>
-          <a href="#" class="btn btn-primary" id="boton-carrito">+</a>
+          <button onclick="tuCompra(1000, 'Carpano Rosso - $1000' )" class="btn btn-primary" >Agregar al carrito</button>
         </div>
       </div></div>
     </div>
@@ -295,69 +239,69 @@
     
   </div>
    <div class="slides-2">
-    <div class="cocktails-2">
+    <div class="cocktails-2" id="Beers x6">
       <h2>Beers</h2>
       <div class="card-contenedor-gpt">
       <div class="card" style="width: 18rem;" id="cocktails-2-contenido">
         <img src="/imagenes/stella artois.jpeg" class="card-img-top" >
         <div class="card-body" >
-          <h5 class="card-title">Stella Artois - $1000</h5>
+          <h5 class="card-title">Stella Artois - $2000</h5>
           <p class="card-text">Champions League</p>
-          <a href="#" class="btn btn-primary">Agregar al carrito</a>
+          <button onclick="tuCompra(2000, 'Stella Artois - $2000' )" class="btn btn-primary" >Agregar al carrito</button>
         </div>
       </div></div>
       <div class="card-contenedor-gpt">
       <div class="card" style="width: 18rem;" id="cocktails-2-contenido">
         <img src="/imagenes/andes-roja-473ml.jpg" class="card-img-top" >
         <div class="card-body" >
-          <h5 class="card-title">Andes Roja - $1000</h5>
+          <h5 class="card-title">Andes Roja - $1600</h5>
           <p class="card-text">Cervez especial...</p>
-          <a href="#" class="btn btn-primary">Agregar al carrito</a>
+          <button onclick="tuCompra(1600, 'Andes Roja - $1600' )" class="btn btn-primary" >Agregar al carrito</button>
         </div>
       </div></div>
       <div class="card-contenedor-gpt">
       <div class="card" style="width: 18rem;" id="cocktails-2-contenido">
         <img src="/imagenes/andes-ipa.jpeg" class="card-img-top" >
         <div class="card-body" >
-          <h5 class="card-title">Andes IPA - $1000</h5>
+          <h5 class="card-title">Andes IPA - $1600</h5>
           <p class="card-text">Nuevas aventuras</p>
-          <a href="#" class="btn btn-primary">Agregar al carrito</a>
+          <button onclick="tuCompra(1600, 'Andes IPA - $1600' )" class="btn btn-primary" >Agregar al carrito</button>
         </div>
       </div></div>
       <div class="card-contenedor-gpt">
       <div class="card" style="width: 18rem;" id="cocktails-2-contenido">
         <img src="/imagenes/andes-rubia.jpeg" class="card-img-top" >
         <div class="card-body" >
-          <h5 class="card-title">Andes Rubia - $1000</h5>
+          <h5 class="card-title">Andes Rubia - $1500</h5>
           <p class="card-text">Puro sabor...</p>
-          <a href="#" class="btn btn-primary">Agregar al carrito</a>
+          <button onclick="tuCompra(1500, 'Andes Rubia - $1500' )" class="btn btn-primary" >Agregar al carrito</button>
         </div>
       </div></div>
       <div class="card-contenedor-gpt">
       <div class="card" style="width: 18rem;" id="cocktails-2-contenido">
         <img src="/imagenes/quilmes-clasica.webp" class="card-img-top" >
         <div class="card-body" >
-          <h5 class="card-title">Quilmes Clasica - $1000</h5>
+          <h5 class="card-title">Quilmes Clasica - $1300</h5>
           <p class="card-text">Argentina, como vos</p>
-          <a href="#" class="btn btn-primary">Agregar al carrito</a>
+          <button onclick="tuCompra(1300, 'Quilmes Clasica - $1300' )" class="btn btn-primary" >Agregar al carrito</button>
         </div>
       </div></div>
       <div class="card-contenedor-gpt">
       <div class="card" style="width: 18rem;" id="cocktails-2-contenido">
         <img src="/imagenes/budweiser.webp" class="card-img-top" >
         <div class="card-body" >
-          <h5 class="card-title">Budweiser - $1000</h5>
+          <h5 class="card-title">Budweiser - $1500</h5>
           <p class="card-text">Las Bud son amigas...</p>
-          <a href="#" class="btn btn-primary">Agregar al carrito</a>
+          <button onclick="tuCompra(1500, 'Budweiser - $1500' )" class="btn btn-primary" >Agregar al carrito</button>
         </div>
       </div></div>
       <div class="card-contenedor-gpt">
       <div class="card" style="width: 18rem;" id="cocktails-2-contenido">
         <img src="/imagenes/amstel.jpeg" class="card-img-top" >
         <div class="card-body" >
-          <h5 class="card-title">Amstel Lager - $1000</h5>
+          <h5 class="card-title">Amstel Lager - $1200</h5>
           <p class="card-text">Para tomar con amigos</p>
-          <a href="#" class="btn btn-primary" id="boton-carrito">+</a>
+          <button onclick="tuCompra(1200, 'Amstel Lager - $1200' )" class="btn btn-primary" >Agregar al carrito</button>
         </div>
       </div></div>
     </div>
@@ -365,14 +309,14 @@
   </div>
 </div>
 <div class="slides-2">
- <div class="cocktails-2">
+ <div class="cocktails-2" id="Non-Alcohol">
    <h2>Non-Alcohol</h2>
    <div class="card-contenedor-gpt">
    <div class="card" style="width: 18rem;" id="cocktails-2-contenido">
      <img src="/imagenes/coca-cola-225L.jpeg" class="card-img-top" >
      <div class="card-body" >
        <h5 class="card-title">Coca-Cola 2.25l - $1000</h5>
-       <a href="#" class="btn btn-primary">Agregar al carrito</a>
+       <button onclick="tuCompra(1000, 'Coca-Cola 2.25l - $1000' )" class="btn btn-primary" >Agregar al carrito</button>
      </div>
    </div></div>
    <div class="card-contenedor-gpt">
@@ -380,7 +324,7 @@
      <img src="/imagenes/coca-cola-zero.webp" class="card-img-top" >
      <div class="card-body" >
        <h5 class="card-title">Coca Zero 2.25l - $1000</h5>
-       <a href="#" class="btn btn-primary">Agregar al carrito</a>
+       <button onclick="tuCompra(1000, 'Coca Zero 2.25l - $1000' )" class="btn btn-primary" >Agregar al carrito</button>
      </div>
    </div></div>
    <div class="card-contenedor-gpt">
@@ -388,47 +332,47 @@
      <img src="/imagenes/sprite.jpeg" class="card-img-top" >
      <div class="card-body" >
        <h5 class="card-title">Sprite 2.25l - $1000</h5>
-       <a href="#" class="btn btn-primary">Agregar al carrito</a>
+       <button onclick="tuCompra(1000, 'Sprite 2.25l - $1000' )" class="btn btn-primary" >Agregar al carrito</button>
      </div>
    </div></div>
    <div class="card-contenedor-gpt">
    <div class="card" style="width: 18rem;" id="cocktails-2-contenido">
      <img src="/imagenes/gatorade-roja.jpeg" class="card-img-top" >
      <div class="card-body" >
-       <h5 class="card-title">Gatorade 1.25l - $1000</h5>
-       <a href="#" class="btn btn-primary">Agregar al carrito</a>
+       <h5 class="card-title">Gatorade 1.25l - $800</h5>
+       <button onclick="tuCompra(800, 'Gatorade 1.25l - $800' )" class="btn btn-primary" >Agregar al carrito</button>
      </div>
    </div></div>
    <div class="card-contenedor-gpt">
    <div class="card" style="width: 18rem;" id="cocktails-2-contenido">
      <img src="/imagenes/pdt-tonica-1.5.jpeg" class="card-img-top" >
      <div class="card-body" >
-       <h5 class="card-title">PDT Tonica 1.5l - $1000</h5>
-       <a href="#" class="btn btn-primary">Agregar al carrito</a>
+       <h5 class="card-title">PDT Tonica 1.5l - $600</h5>
+       <button onclick="tuCompra(600, 'PDT Tonica 1.5l - $600' )" class="btn btn-primary" >Agregar al carrito</button>
      </div>
    </div></div>
    <div class="card-contenedor-gpt">
    <div class="card" style="width: 18rem;" id="cocktails-2-contenido">
      <img src="/imagenes/pdt-pomelo-1.5.jpeg" class="card-img-top" >
      <div class="card-body" >
-       <h5 class="card-title">PDT Pomelo 1.5l - $1000</h5>
-       <a href="#" class="btn btn-primary">Agregar al carrito</a>
+       <h5 class="card-title">PDT Pomelo 1.5l - $600</h5>
+       <button onclick="tuCompra(600, 'PDT Pomelo 1.5l - $600' )" class="btn btn-primary" >Agregar al carrito</button>
      </div>
    </div></div>
    <div class="card-contenedor-gpt">
    <div class="card" style="width: 18rem;" id="cocktails-2-contenido">
      <img src="/imagenes/levite-naranja-1.5.jpeg" class="card-img-top" >
      <div class="card-body" >
-       <h5 class="card-title">Levite Naranja 1.5l - $1000</h5>
-       <a href="#" class="btn btn-primary" id="boton-carrito">+</a>
+       <h5 class="card-title">Levite Naranja 1.5l - $500</h5>
+       <button onclick="tuCompra(500, 'Levite Naranja 1.5l - $500' )" class="btn btn-primary" >Agregar al carrito</button>
      </div>
    </div></div>
    <div class="card-contenedor-gpt">
    <div class="card" style="width: 18rem;" id="cocktails-2-contenido">
     <img src="/imagenes/speed xl.jpeg" class="card-img-top" >
     <div class="card-body" >
-      <h5 class="card-title">Speed XL - $1000</h5>
-      <a href="#" class="btn btn-primary" id="boton-carrito">+</a>
+      <h5 class="card-title">Speed XL - $600</h5>
+      <button onclick="tuCompra(600, 'Speed XL - $600' )" class="btn btn-primary" >Agregar al carrito</button>
     </div>
   </div></div>
  </div>
@@ -438,55 +382,55 @@
 <!--  -->
 <!--  -->
 <div class="slides-2">
- <div class="cocktails-2">
+ <div class="cocktails-2" id="Combos">
    <h2>Combos</h2>
    <div class="card-contenedor-gpt">
    <div class="card" style="width: 18rem;" id="cocktails-2-contenido">
-     <img src="/imagenes/stella artois.jpeg" class="card-img-top" >
+     <img src="/imagenes/combo-1.jpg" class="card-img-top" >
      <div class="card-body" >
-       <h5 class="card-title">Combo 1 - $1000</h5>
+       <h5 class="card-title">Combo 1 - $2700</h5>
        <p class="card-text">Fernet 750cl y cocucha 2.25. Dupla a lo Diego-Cani</p>
-       <a href="#" class="btn btn-primary">Agregar al carrito</a>
+       <button onclick="tuCompra(2700, 'Combo 1 - $2700' )" class="btn btn-primary" >Agregar al carrito</button>
      </div>
    </div></div>
    <div class="card-contenedor-gpt">
    <div class="card" style="width: 18rem;" id="cocktails-2-contenido">
-     <img src="/imagenes/andes-roja-473ml.jpg" class="card-img-top" >
+     <img src="/imagenes/combo-2.jpg" class="card-img-top" >
      <div class="card-body" >
-       <h5 class="card-title">Combo 2 - $1000</h5>
+       <h5 class="card-title">Combo 2 - $3000</h5>
        <p class="card-text">Gin Gordons acompanado de dos tonicas, para disfrutar del clasico mas antiguo. Pura clase.</p>
-       <a href="#" class="btn btn-primary">Agregar al carrito</a>
+       <button onclick="tuCompra(3000, 'Combo 2 - $3000' )" class="btn btn-primary" >Agregar al carrito</button>
      </div>
    </div></div>
    <div class="card-contenedor-gpt">
    <div class="card" style="width: 18rem;" id="cocktails-2-contenido">
-     <img src="/imagenes/andes-ipa.jpeg" class="card-img-top" >
+     <img src="/imagenes/combo-3.jpg" class="card-img-top" >
      <div class="card-body" >
-       <h5 class="card-title">Combo 3 - $1000</h5>
+       <h5 class="card-title">Combo 3 - $2500</h5>
        <p class="card-text">Vodka y dos Gatorade 1.25l. Combustible del bueno.</p>
-       <a href="#" class="btn btn-primary">Agregar al carrito</a>
+       <button onclick="tuCompra(2500, 'Combo 3 - $2500' )" class="btn btn-primary" >Agregar al carrito</button>
      </div>
    </div></div>
    <div class="card-contenedor-gpt">
    <div class="card" style="width: 18rem;" id="cocktails-2-contenido">
-     <img src="/imagenes/andes-rubia.jpeg" class="card-img-top" >
+     <img src="/imagenes/combo-4.jpg" class="card-img-top" >
      <div class="card-body" >
-       <h5 class="card-title">Combo 4 - $1000</h5>
+       <h5 class="card-title">Combo 4 - $2500</h5>
        <p class="card-text">Llego el Diesel para quedarse. Sumale dos speeds a tu combo vodka para arrancar bien arriba</p>
-       <a href="#" class="btn btn-primary">Agregar al carrito</a>
+       <button onclick="tuCompra(2500, 'Combo 4 - $2500' )" class="btn btn-primary" >Agregar al carrito</button>
      </div>
    </div></div>
    <div class="card-contenedor-gpt">
    <div class="card" style="width: 18rem;" id="cocktails-2-contenido">
-     <img src="/imagenes/quilmes-clasica.webp" class="card-img-top" >
+     <img src="/imagenes/combo-XLL.jpg" class="card-img-top" >
      <div class="card-body" >
-       <h5 class="card-title">Combo XL - $1000</h5>
+       <h5 class="card-title">Combo XL - $3400</h5>
        <p class="card-text">Branca 750cl y dos cocuchas 2.25. Para que no te quedes con sed</p>
-       <a href="#cart-button" class="btn btn-primary">Agregar al carrito</a>
+       <button onclick="tuCompra(3400, 'Combo XL - $3400' )" class="btn btn-primary" >Agregar al carrito</button>
      </div>
    </div></div>
  </div>
-
+  <!--  -->
 </div>
 
 </div>
@@ -516,18 +460,6 @@
       </div>
       <div class="segunda-mitad">
           <h2>Sigamos Conectados</h2>
-          <!-- <div class="cosas">
-          <a href="https://www.instagram.com/bonsai.bebidas/"target="_blank">
-            <div class="insta">
-              <i class="fa-brands fa-square-instagram fa-lg"></i>
-            </div>
-          </a>
-          <a  href="https://www.instagram.com/bonsai.bebidas/" target="_blank">
-            <div class="insta" >
-              <i class="fa-brands fa-tiktok fa-lg"></i>
-            </div>
-          </a>
-          </div> -->
           <div class="footer">
             <div class="footer-conteiner">
               <ul>
