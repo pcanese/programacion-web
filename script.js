@@ -62,15 +62,7 @@ function Eliminar_seleccion() {
     document.getElementById("MuestraProductos").innerHTML = bebidas ;}
 
 
-// const botonFinalizar = document.querySelector(".finalizar_compra");
 
-// botonFinalizar.addEventListener("click", function() {
-//   const email = prompt("Ingrese su dirección de correo electrónico:");
-
-//   if (email) {
-//     alert("¡La operación se ha realizado con éxito!");
-//   }
-// });
 
 
 const botonFinalizar = document.querySelector(".finalizar_compra");
