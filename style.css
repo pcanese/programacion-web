@@ -927,7 +927,9 @@ div{
 }
 
 /*  */
-
+.back-img{
+    display: none;
+}
 @media screen and (max-width:700px){
 
     /* carrito */
@@ -944,11 +946,23 @@ div{
 
 
     .back-video{
-        height: 100%;
-        object-fit: cover;
+        /* height: 100%;
+        object-fit: cover; */
+        display: none;
         
     }
     
+    .back-img{
+        display:block;
+        position:absolute;
+        right: 0;
+        bottom: 0;
+        z-index: -1;
+        width: 100%;
+        background-size: cover;
+        height: 100vh;
+}
+    }
     .content {
         flex-direction: column;
         display: flex;
