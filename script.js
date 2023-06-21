@@ -108,3 +108,29 @@ botonFinalizar.addEventListener("click", function() {
 
 
 
+
+
+
+
+var botones = document.getElementsByClassName('agregar_al_carrito');
+for (var i = 0; i < botones.length; i++) {
+  botones[i].addEventListener('click', function() {
+    var boton = this;
+    boton.style.backgroundColor = 'white'; 
+    boton.style.color = 'black'; 
+
+  var carroMovil = document.getElementById('carro_de_compras');
+  carroMovil.style.color = 'white'; 
+  var BordercarroMovil = document.getElementById('carrozza');
+  BordercarroMovil.style.borderColor = 'white'; 
+  BordercarroMovil.style.borderWidth = '3px';
+    setTimeout(function() {
+    BordercarroMovil.style.borderWidth = '';
+    BordercarroMovil.style.borderColor = ''; 
+    carroMovil.style.color = ''; 
+    boton.style.backgroundColor = '';  
+    boton.style.color = ''; 
+
+    }, 700); 
+  });
+}

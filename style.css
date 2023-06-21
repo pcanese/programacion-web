@@ -932,11 +932,13 @@ div{
 }
 
 
-#agregar_al_carrito:hover{
-    background-color: white;
-    color: black;
-    transition: 1.7s;
+#agregar_al_carrito{
+    background-color: rgb(56, 54, 54);
+    border-color:black;
+    border-radius: 0;
+    
 }
+
 
 @media screen and (max-width:700px){
 
