@@ -106,12 +106,6 @@ botonFinalizar.addEventListener("click", function() {
 });
 
 
-
-
-
-
-
-
 var botones = document.getElementsByClassName('agregar_al_carrito');
 for (var i = 0; i < botones.length; i++) {
   botones[i].addEventListener('click', function() {
