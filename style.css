@@ -996,11 +996,11 @@ div{
     /* botones + y - */
     #boton-decrementar{
         border-width: .1vw;
-        font-size: 2vw;
+        font-size: 4vw;
     }
     #boton-incrementar{
         border-width: .1vw;
-        font-size: 2vw;
+        font-size: 4vw;
         margin-left: 3vw;
     }
     /* carrito */
