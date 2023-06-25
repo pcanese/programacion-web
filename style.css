@@ -997,6 +997,7 @@ div{
     #boton-decrementar{
         border-width: .1vw;
         font-size: 4vw;
+        margin-bottom: 1.4vw;
     }
     #boton-incrementar{
         border-width: .1vw;
